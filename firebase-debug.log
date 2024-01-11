@@ -1,0 +1,101 @@
+[debug] [2024-01-10T14:24:33.123Z] ----------------------------------------------------------------------
+[debug] [2024-01-10T14:24:33.128Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\OC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-10T14:24:33.129Z] CLI Version:   13.0.3
+[debug] [2024-01-10T14:24:33.129Z] Platform:      win32
+[debug] [2024-01-10T14:24:33.129Z] Node Version:  v20.10.0
+[debug] [2024-01-10T14:24:33.130Z] Time:          Wed Jan 10 2024 19:24:33 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-01-10T14:24:33.130Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-10T14:24:33.389Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-10T14:24:33.391Z] > authorizing via signed-in user (zahidpats@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\OC\Documents\Abdul Wasea\My Projects\New\Bits-0f-C0de-main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-10T14:24:53.042Z] Using project from CLI flag: ecommerce-405812
+[debug] [2024-01-10T14:24:53.043Z] > refreshing access token with scopes: []
+[debug] [2024-01-10T14:24:53.051Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-10T14:24:53.052Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-10T14:24:53.999Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-10T14:24:53.999Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-10T14:24:54.052Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-405812 [none]
+[debug] [2024-01-10T14:24:54.933Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-405812 200
+[debug] [2024-01-10T14:24:54.933Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-405812 {"projectId":"ecommerce-405812","projectNumber":"715609096551","displayName":"Ecommerce","name":"projects/ecommerce-405812","resources":{"hostingSite":"ecommerce-405812","realtimeDatabaseInstance":"ecommerce-405812-default-rtdb","storageBucket":"ecommerce-405812.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_7dbcc4e9-ce4d-4efb-9e4b-005b018cfc63"}
+[info] i  Using project ecommerce-405812 (Ecommerce) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-01-10T14:24:54.942Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecommerce-405812/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-01-10T14:24:54.944Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecommerce-405812/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/ecommerce-405812
+[debug] [2024-01-10T14:24:56.964Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecommerce-405812/services/firebasedatabase.googleapis.com 200
+[debug] [2024-01-10T14:24:56.964Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecommerce-405812/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-01-10T14:24:56.966Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/ecommerce-405812/locations/-/instances/ecommerce-405812-default-rtdb [none]
+[debug] [2024-01-10T14:24:58.780Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/ecommerce-405812/locations/-/instances/ecommerce-405812-default-rtdb 200
+[debug] [2024-01-10T14:24:58.780Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/ecommerce-405812/locations/-/instances/ecommerce-405812-default-rtdb {"name":"projects/715609096551/locations/us-central1/instances/ecommerce-405812-default-rtdb","project":"projects/715609096551","databaseUrl":"https://ecommerce-405812-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] Skipping overwrite of Realtime Database Security Rules.
+[info] The security rules defined in Firebase-admin.js will be published when you run firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-01-10T14:25:08.874Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecommerce-405812/services/firestore.googleapis.com [none]
+[debug] [2024-01-10T14:25:08.874Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecommerce-405812/services/firestore.googleapis.com x-goog-quota-user=projects/ecommerce-405812
+[debug] [2024-01-10T14:25:10.674Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecommerce-405812/services/firestore.googleapis.com 200
+[debug] [2024-01-10T14:25:10.674Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecommerce-405812/services/firestore.googleapis.com [omitted]
+[debug] [2024-01-10T14:25:10.675Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ecommerce-405812/databases/(default) [none]
+[debug] [2024-01-10T14:25:12.360Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ecommerce-405812/databases/(default) 200
+[debug] [2024-01-10T14:25:12.360Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ecommerce-405812/databases/(default) {"name":"projects/ecommerce-405812/databases/(default)","uid":"c67fa4ad-32e2-4643-909f-5d3e63e2d645","createTime":"2024-01-09T17:16:24.322256Z","updateTime":"2024-01-09T17:16:24.322256Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-01-10T13:25:12.290967Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IMzgqJeD04MDMKHpkLCS0YMD"}
+[debug] [2024-01-10T14:25:12.360Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-01-10T14:25:12.361Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-10T14:25:12.361Z] > authorizing via signed-in user (zahidpats@gmail.com)
+[debug] [2024-01-10T14:25:12.361Z] [iam] checking project ecommerce-405812 for permissions ["firebase.projects.get"]
+[debug] [2024-01-10T14:25:12.363Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-405812:testIamPermissions [none]
+[debug] [2024-01-10T14:25:12.363Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-405812:testIamPermissions x-goog-quota-user=projects/ecommerce-405812
+[debug] [2024-01-10T14:25:12.363Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-405812:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-10T14:25:14.724Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-405812:testIamPermissions 200
+[debug] [2024-01-10T14:25:14.724Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-405812:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-01-10T14:25:25.941Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ecommerce-405812/releases pageSize=10&pageToken=
+[debug] [2024-01-10T14:25:28.596Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ecommerce-405812/releases 200
+[debug] [2024-01-10T14:25:28.596Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ecommerce-405812/releases {"releases":[{"name":"projects/ecommerce-405812/releases/cloud.firestore","rulesetName":"projects/ecommerce-405812/rulesets/90e538a9-98ba-4b80-9bb8-39764a84da96","createTime":"2024-01-09T17:16:34.083182Z","updateTime":"2024-01-09T17:17:32.302840Z"},{"name":"projects/ecommerce-405812/releases/firebase.storage/ecommerce-405812.appspot.com","rulesetName":"projects/ecommerce-405812/rulesets/b3cf89d6-6c63-4ae9-b3f1-0079585fd15f","createTime":"2024-01-09T17:24:24.208618Z","updateTime":"2024-01-09T17:52:26.020660Z"}]}
+[debug] [2024-01-10T14:25:28.618Z] Found ruleset: projects/ecommerce-405812/rulesets/90e538a9-98ba-4b80-9bb8-39764a84da96
+[debug] [2024-01-10T14:25:28.618Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ecommerce-405812/rulesets/90e538a9-98ba-4b80-9bb8-39764a84da96 [none]
+[debug] [2024-01-10T14:25:29.463Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ecommerce-405812/rulesets/90e538a9-98ba-4b80-9bb8-39764a84da96 200
+[debug] [2024-01-10T14:25:29.464Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ecommerce-405812/rulesets/90e538a9-98ba-4b80-9bb8-39764a84da96 [omitted]
+[debug] [2024-01-10T14:25:29.939Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\OC\Documents\Abdul Wasea\My Projects\New\Bits-0f-C0de-main\firebase'
+    at Object.openSync (node:fs:581:18)
+    at Object.writeFileSync (node:fs:2342:35)
+    at Object.createFileSync (C:\Users\OC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:63:6)
+    at Config.writeProjectFile (C:\Users\OC\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:154:12)
+    at C:\Users\OC\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\rules.js:50:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (C:\Users\OC\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\index.js:33:5)
+    at async init (C:\Users\OC\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: An unexpected error has occurred.
